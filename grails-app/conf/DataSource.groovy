@@ -1,6 +1,6 @@
 dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
+    driverClassName = "org.postgresql.Driver"
     username = "postgres"
     password = "root"
 }
@@ -13,8 +13,9 @@ hibernate {
 environments {
     development {
         dataSource {
+			pooled = false
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = 'jdbc:postgresql://localhost:5432/herokutest'
         }
     }
     test {

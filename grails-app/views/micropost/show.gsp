@@ -23,20 +23,20 @@
 			</g:if>
 			<ol class="property-list micropost">
 			
+				<g:if test="${micropostInstance?.author}">
+				<li class="fieldcontain">
+					<span id="author-label" class="property-label"><g:message code="micropost.author.label" default="Author" /></span>
+					
+						<span class="property-value" aria-labelledby="author-label"><g:link controller="author" action="show" id="${micropostInstance?.author?.id}">${micropostInstance?.author?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${micropostInstance?.content}">
 				<li class="fieldcontain">
 					<span id="content-label" class="property-label"><g:message code="micropost.content.label" default="Content" /></span>
 					
 						<span class="property-value" aria-labelledby="content-label"><g:fieldValue bean="${micropostInstance}" field="content"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${micropostInstance?.user}">
-				<li class="fieldcontain">
-					<span id="user-label" class="property-label"><g:message code="micropost.user.label" default="User" /></span>
-					
-						<span class="property-value" aria-labelledby="user-label"><g:link controller="user" action="show" id="${micropostInstance?.user?.id}">${micropostInstance?.user?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
