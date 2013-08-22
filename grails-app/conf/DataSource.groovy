@@ -25,7 +25,7 @@ environments {
     }
     production {
     dataSource {
-            dbCreate = "none"
+            dbCreate = "update"
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
             url = 'jdbc:postgresql://localhost:5432/herokutest?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory'
