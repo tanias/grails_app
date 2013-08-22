@@ -43,7 +43,8 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.22'
 		runtime 'postgresql:postgresql:9.0-801.jdbc4'
-    }
+		runtime 'com.newrelic.agent.java:newrelic-agent:2.11.0'
+          }
 
     plugins {
         runtime ":hibernate:$grailsVersion"
@@ -63,5 +64,7 @@ grails.project.dependency.resolution = {
 		
 		compile ':heroku:1.0.1'
 		compile ':cloud-support:1.0.8'
+		
+		compile ":newrelic:1.0-2.18.0"
     }
 }
