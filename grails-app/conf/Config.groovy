@@ -59,15 +59,16 @@ grails.exceptionresolver.params.exclude = ['password']
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
 newrelic.enabled = true
+
+
 environments {
     development {
         grails.logging.jul.usebridge = true
-		//export GRAILS_OPTS="-javaagent:/path/to/newrelic.jar"
+		
     }
     production {
         grails.logging.jul.usebridge = false
-		//export GRAILS_OPTS="-javaagent:/path/to/newrelic.jar"
-        // TODO: grails.serverURL = "http://www.changeme.com"
+	     // TODO: grails.serverURL = "http://www.changeme.com"
     }
 }
 
