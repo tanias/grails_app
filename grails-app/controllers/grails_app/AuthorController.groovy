@@ -20,6 +20,7 @@ class AuthorController {
     }
 	def createTest(){
 		def i = Integer.parseInt(params.recCount)
+		println i
 		while( i > 0 ) {
 			def author = new Author()
 			author.name = "A${i}"
