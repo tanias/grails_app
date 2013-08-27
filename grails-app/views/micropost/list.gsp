@@ -13,6 +13,12 @@
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 100]"><g:message code="default.newTest.label" args="[entityName,100]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 200]"><g:message code="default.newTest.label" args="[entityName,200]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 500]"><g:message code="default.newTest.label" args="[entityName,500]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 1000]"><g:message code="default.newTest.label" args="[entityName,1000]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 2000]"><g:message code="default.newTest.label" args="[entityName,2000]" /></g:link></li>
+				<li><g:link class="create" action="createTest" params="[recCount: 5000]"><g:message code="default.newTest.label" args="[entityName,5000]" /></g:link></li>
 			</ul>
 		</div>
 		<div id="list-micropost" class="content scaffold-list" role="main">

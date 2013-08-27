@@ -18,6 +18,17 @@ class AuthorController {
     def create() {
         [authorInstance: new Author(params)]
     }
+	def createTest(){
+		def i = Integer.parseInt(params.recCount)
+		while( i > 0 ) {
+			def author = new Author()
+			author.name = "A${i}"
+			author.email = "A${i}@testmail.com"			
+			author.save()
+			i = i - 1
+		}
+		redirect(action: "list")
+	}
 
     def save() {
         def authorInstance = new Author(params)

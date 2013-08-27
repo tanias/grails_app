@@ -18,7 +18,21 @@ class MicropostController {
     def create() {
         [micropostInstance: new Micropost(params)]
     }
-
+	def createTest(){
+		def i = Integer.parseInt(params.recCount)
+		while( i > 0 ) {
+			def author = new Author()
+			author.name = "A${i}"
+			author.email = "A${i}@testmail.com"
+			author.save()
+			def micropost= new Micropost()
+			micropost.content="text${1}"
+			micropost.author=author
+			micropost.save()
+			i = i - 1
+		}
+		redirect(action: "list")
+	}
     def save() {
         def micropostInstance = new Micropost(params)
         if (!micropostInstance.save(flush: true)) {
