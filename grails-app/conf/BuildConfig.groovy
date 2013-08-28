@@ -63,12 +63,7 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.3.2"
 
         compile ':cache:1.0.1'
-		
-		compile ':heroku:1.0.1'
-		compile ':cloud-support:1.0.8'
-		
-		compile ":newrelic:1.0-2.18.0"
-		
+				
 		compile ":grails-melody:1.46"
     }
 }

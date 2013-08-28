@@ -10,16 +10,16 @@
 	<body>
 		<a href="#list-author" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>				
-				<li><g:link class="create" action="createTest" params="[recCount: 100]"><g:message code="default.newTest.label" args="[entityName,100]" /></g:link></li>
-				<li><g:link class="create" action="createTest" params="[recCount: 200]"><g:message code="default.newTest.label" args="[entityName,200]" /></g:link></li>
-				<li><g:link class="create" action="createTest" params="[recCount: 500]"><g:message code="default.newTest.label" args="[entityName,500]" /></g:link></li>
-				<li><g:link class="create" action="createTest" params="[recCount: 1000]"><g:message code="default.newTest.label" args="[entityName,1000]" /></g:link></li>
-				<li><g:link class="create" action="createTest" params="[recCount: 2000]"><g:message code="default.newTest.label" args="[entityName,2000]" /></g:link></li>
-				<li><g:link class="create" action="createTest" params="[recCount: 5000]"><g:message code="default.newTest.label" args="[entityName,5000]" /></g:link></li>
-			</ul>
+			
+				<a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
+				<g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link>				
+				<g:link class="create" action="createTest" params="[recCount: 100]"><g:message code="default.newTest.label" args="[entityName,100]" /></g:link>
+				<g:link class="create" action="createTest" params="[recCount: 200]"><g:message code="default.newTest.label" args="[entityName,200]" /></g:link>
+				<g:link class="create" action="createTest" params="[recCount: 500]"><g:message code="default.newTest.label" args="[entityName,500]" /></g:link>
+				<g:link class="create" action="createTest" params="[recCount: 1000]"><g:message code="default.newTest.label" args="[entityName,1000]" /></g:link>
+				<g:link class="create" action="createTest" params="[recCount: 2000]"><g:message code="default.newTest.label" args="[entityName,2000]" /></g:link>
+				<g:link class="create" action="createTest" params="[recCount: 5000]"><g:message code="default.newTest.label" args="[entityName,5000]" /></g:link>
+			
 		</div>
 		<div id="list-author" class="content scaffold-list" role="main">
 			<h1><g:message code="default.list.label" args="[entityName]" /></h1>
