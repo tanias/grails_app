@@ -68,6 +68,6 @@ grails.project.dependency.resolution = {
 		compile ':cloud-support:1.0.8'
 		
 		
-		//compile ":grails-melody:1.46"
+		compile ":grails-melody:1.46"
     }
 }
