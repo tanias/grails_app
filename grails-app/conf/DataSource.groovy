@@ -29,7 +29,7 @@ environments {
             dbCreate = "create-drop"
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
-            url = 'jdbc:postgresql://localhost:5432/herokutest?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory'
+            url = 'jdbc:postgresql://localhost:5432/herokutest'
             username = 'postgres'
             password = 'root'
     }

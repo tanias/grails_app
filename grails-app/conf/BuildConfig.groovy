@@ -43,7 +43,7 @@ grails.project.dependency.resolution = {
 
         // runtime 'mysql:mysql-connector-java:5.1.22'
 		runtime 'postgresql:postgresql:9.0-801.jdbc4'
-	    runtime 'com.newrelic.agent.java:newrelic-agent:2.11.0'
+	   // runtime 'com.newrelic.agent.java:newrelic-agent:2.11.0'
 	
           }
 
